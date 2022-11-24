@@ -3,11 +3,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/globals.css'
+import { wrapper, store } from "../store/store";
+import { Provider } from "react-redux";
 
-export default function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
   return (
     <Layout>
-      <Component {...pageProps} />
+      <Provider store={store}>
+        <Component {...pageProps} />
+      </Provider>
     </Layout>
   )
 }
+
+export default wrapper.withRedux(MyApp);

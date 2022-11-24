@@ -5,23 +5,11 @@ import SetProducts from "../components/SetProducts";
 import SashimiProducts from "../components/SashimiProducts";
 import DessertProducts from "../components/DessertProducts";
 import BeverageProducts from "../components/BeverageProducts";
-import React, { useState } from "react";
-
+import React from "react";
+import Cart from "../components/CartList";
 
 export default function RestourantsPage() {
-  const cart = []
-  function addToCart(currentProduct){
-    let currProdIndex = cart.findIndex(x => x.id == currentProduct.id)
-    if(currProdIndex >= 0){
-      cart[currProdIndex].amount++
-    }
-    else{
-      cart.push({id: currentProduct.id, amount: 1})
-    }
-    console.log(cart)
-  }
-
-
+  
   return (
     <>
       <section className="section-after-nav es-restorant-main-content">
@@ -133,11 +121,11 @@ export default function RestourantsPage() {
               </div>
               <div className="restourant-menu-section first-restourant-section" id="rolls">
                 <h2 className="restourant-menu-header">Ролы</h2>
-                <RollProducts key={0} addToCart = {addToCart} cart = {cart} />
+                <RollProducts />
               </div>
               <div className="restourant-menu-section" id="sushi">
                 <h2 className="restourant-menu-header">Суши</h2>
-                <SushiProducts />
+                <SushiProducts  />
               </div>
               <div className="restourant-menu-section" id="sets">
                 <h2 className="restourant-menu-header">Сеты</h2>
@@ -157,51 +145,7 @@ export default function RestourantsPage() {
               </div>
             </div>
             <div className="col-3 aside-container">
-              <div className="restourant-aside">
-                <div className="aside-products-header d-flex justify-content-between align-items-center">
-                  <div className="es-sub-header m-0">Корзина</div>
-                  <button className="btn">Очистить</button>
-                </div>
-                <div className="aside-products-container">
-                  <div className="aside-products-wrapper">
-                    <div className="aside-product d-flex align-items-center justify-content-between">
-                      <img src="img/aside-product.svg" alt="" />
-                      <div className="aside-product-info">
-                        <h4 className="es-font-14 es-font-medium">Калифорния</h4>
-                        <p className="mb-0 es-font-medium">15 сом</p>
-                      </div>
-                      <div className="aside-qty-btns d-flex align-items-center">
-                        <button className="btn">-</button>
-                        <span>1</span>
-                        <button className="btn">+</button>
-                      </div>
-                    </div>
-                    <div className="aside-product d-flex align-items-center justify-content-between">
-                      <img src="img/aside-product.svg" alt="" />
-                      <div className="aside-product-info">
-                        <h4 className="es-font-14 es-font-medium">Калифорния</h4>
-                        <p className="mb-0 es-font-medium">15 сом</p>
-                      </div>
-                      <div className="aside-qty-btns d-flex align-items-center">
-                        <button className="btn">-</button>
-                        <span>1</span>
-                        <button className="btn">+</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="aside-product d-flex align-items-center justify-content-between border-bottom-0">
-                  <img src="img/aside-product.svg" alt="" />
-                  <div className="aside-product-info">
-                    <h4 className="es-font-14 es-font-medium">Калифорния</h4>
-                    <p className="mb-0 es-font-medium">15 сом</p>
-                  </div>
-                  <div className="discount-shape">
-                    <img src="img/discount-shape.svg" alt="" />
-                  </div>
-                </div>
-                <a className="aside-order-btn" href="#"><span>Заказать</span><span>60 сом</span></a>
-              </div>
+              <Cart />
             </div>
           </div>
         </div>

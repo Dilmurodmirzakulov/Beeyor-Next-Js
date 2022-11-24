@@ -2007,6 +2007,16 @@
     font-weight: 500;
   }
 
+  .cart-product-img{
+    margin-right: 1.25rem;
+  }
+  .cart-product-img img{
+    width: 80px;
+    height: 74px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
   @keyframes animatebottom {
     from {
       bottom: -300px;
@@ -2017,6 +2027,11 @@
       bottom: 0;
       opacity: 1;
     }
+  }
+
+
+  .test-component{
+    margin-top: 20rem
   }
 
   @media screen and (max-width: 767px) {
