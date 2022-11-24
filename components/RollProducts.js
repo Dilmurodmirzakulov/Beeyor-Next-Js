@@ -1,11 +1,19 @@
 import { useDispatch, useSelector } from "react-redux";
 import { cartActions } from "../store/cartSlice";
+import { favouriteActions } from "../store/favouriteSlice";
 import { productData } from "./productData"
 
 export default function RollProducts() {
+  const heartImg = useSelector(state => state.favourite.heartImg)
+  console.log("heartImg", heartImg)
+  const favouritesList = useSelector(state => state.favourite.favouritesList)
+  console.log(favouritesList)
+
   const products = productData.map(product => {
+  
     const itemsList = useSelector(state => state.cart.itemsList)
     const productIndex = itemsList.findIndex(item => item.id === product.id)
+
     if (product.category === "Ролы") {
       const dispatch = useDispatch();
       return (
@@ -13,8 +21,10 @@ export default function RollProducts() {
           <div className="inner-product-wrapper">
             <div className="favourite-img position-relative">
               <img className="img-fluid w-100" src={product.image} alt="" />
-              <button className="es-liked-img position-absolute">
-                <img src="img/empty-heart.svg" alt="" />
+              <button onClick={() => {
+                dispatch(favouriteActions.toggleFavourite(product.id))
+              }} className="es-liked-img position-absolute">
+                <img src={favouritesList.find(x => x === product.id) ? 'img/heart-full.svg' : 'img/empty-heart.svg'} alt="" />
               </button>
             </div>
             <div className="favourite-product-info">
