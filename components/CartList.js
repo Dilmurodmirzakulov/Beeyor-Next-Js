@@ -12,7 +12,6 @@ export default function CartList() {
   for(let i = 0; i < cartList.length; i++){
     sum = sum + productData[cartList[i].id].price * cartList[i].quantity
   }
-  console.log("sum", sum)
   return (
     <>
       <div className="restourant-aside">
