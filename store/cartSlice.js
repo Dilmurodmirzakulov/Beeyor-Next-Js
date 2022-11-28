@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
-import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
-const MySwal = withReactContent(Swal)
+// import Swal from 'sweetalert2'
+// import withReactContent from 'sweetalert2-react-content'
+import { HYDRATE } from 'next-redux-wrapper';
+
 const cartSlice = createSlice({
   name: 'cart',
   initialState: {
@@ -15,13 +16,6 @@ const cartSlice = createSlice({
         existingItem.quantity++;
       } else {
         state.itemsList.push(newItem);
-        MySwal.fire({
-          position: 'top-end',
-          icon: 'success',
-          title: 'Your product has been added to the cart',
-          showConfirmButton: false,
-          timer: 1500
-        })
       }
     },
     removeFromCart(state, action) {
@@ -33,13 +27,21 @@ const cartSlice = createSlice({
         existingItem.quantity--;
       }
     },
-    clearCart(state){
+    clearCart(state) {
       state.itemsList = []
     },
-    increment(state, action){
+    increment(state, action) {
       const increaseItem = action.payload;
       const existingItem = state.itemsList.find(item => item.id == increaseItem);
       existingItem.quantity++;
+    },
+    extraReducers: {
+      [HYDRATE]: (state, action) => {
+        return {
+          ...state,
+          ...action.payload.cart,
+        };
+      },
     },
   }
 })

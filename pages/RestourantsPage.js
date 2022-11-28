@@ -7,9 +7,17 @@ import DessertProducts from "../components/DessertProducts";
 import BeverageProducts from "../components/BeverageProducts";
 import React from "react";
 import Cart from "../components/CartList";
+import RestorantPageBanner from "../components/RestorantPageBanner";
+import { useSelector } from "react-redux";
+import Scrollspy from 'react-scrollspy'
+import Link from "next/link";
 
-export default function RestourantsPage() {
-  
+export default function RestourantsPage() { 
+  const favouritesList = useSelector(state => state.favourite.favouritesList)
+  console.log("favouritesList", favouritesList)
+  const cartList = useSelector(state => state.cart.itemsList)
+  console.log("cartList", cartList)
+
   return (
     <>
       <section className="section-after-nav es-restorant-main-content">
@@ -17,15 +25,15 @@ export default function RestourantsPage() {
           <div className="row restorant-page-parts-wrapper">
             <div className="col-2 aside-container">
               <div className="aside-container">
-                <a href="#" className="aside-back-button d-flex align-items-center">
+                <Link href="/" className="aside-back-button d-flex align-items-center">
                   <img src="img/arrow-left.svg" alt="" />&nbsp;
                   <span className="es-font-medium">Назад</span>
-                </a>
+                </Link>
                 <div className="aside-nav">
                   <h4 className="m-0 es-font-medium es-font-size-20 es-pt-50">Меню ресторана</h4>
-                  <ul className="aside-nav-list list-unstyled">
+                  <Scrollspy items={['rolls', 'sushi', 'sets', 'sashimi', 'desserts', 'beverages']} currentClassName="active" className="aside-nav-list list-unstyled">
                     <li>
-                      <a className="aside-nav-item active" href="#rolls">Ролы</a>
+                      <a className="aside-nav-item" href="#rolls">Ролы</a>
                     </li>
                     <li>
                       <a className="aside-nav-item" href="#sushi">Суши</a>
@@ -42,66 +50,12 @@ export default function RestourantsPage() {
                     <li>
                       <a className="aside-nav-item" href="#bevereges">Напитки</a>
                     </li>
-                  </ul>
+                  </Scrollspy>
                 </div>
               </div>
             </div>
             <div className="col-lg-7 restorant-page-middle-part">
-              <div className="es-restourant-page-banner position-relative">
-                <div className="restourant-page-banner-info position-absolute">
-                  <button className="btn mob-banner-back-btn banner-btn banner-info-btn">
-                    <img src="img/arrow-left.svg" alt="" />
-                  </button>
-                  <div className="banner-text">
-                    <h1>Якитория</h1>
-                    <p className="main-header-desc">Японская кухня</p>
-                  </div>
-                  <div className="restourant-btns d-flex position-relative">
-                    <div className="d-flex restourant-main-btns-container">
-                      <button className="btn banner-btn">
-                        <img src="img/delivery.svg" alt="" />
-                        50-60 мин
-                      </button>
-                      <button className="btn banner-btn">
-                        <img src="img/ic-star.svg" alt="" />
-                        4,5 (129 отзывов)
-                      </button>
-                    </div>
-                    <div className="dropdown banner-info-btn-wrapper">
-                      <button className="btn banner-btn banner-info-btn data-toggle" type="button" data-toggle="dropdown"
-                        aria-expanded="false">
-                        <img src="img/info-circle.svg" alt="" />
-                      </button>
-                      <div className="dropdown-menu banner-info-dropdown-menu">
-                        <h3 className="es-banner-info-header">Якитория</h3>
-                        <p className="banner-dropdown-desc">
-                          Сеть культовых ресторанов авторской японской кухни…
-                        </p>
-                        <div className="banner-dropdown-row">
-                          <span className="property">Адрес:</span>&nbsp;&nbsp;&nbsp;
-                          <span className="value">Н.Махсум 77/5 А</span>
-                        </div>
-                        <div className="banner-dropdown-row">
-                          <span className="property">Доставка:</span>&nbsp;&nbsp;&nbsp;
-                          <span className="value">от 5 сом</span>
-                        </div>
-                        <div className="banner-dropdown-row">
-                          <span className="property">Мин. заказ:</span>&nbsp;&nbsp;&nbsp;
-                          <span className="value">от 30 сом</span>
-                        </div>
-                        <div className="banner-dropdown-row border-0">
-                          <span className="property">Режим работы:</span>&nbsp;&nbsp;&nbsp;
-                          <span className="value">с 8:00 до 22:00</span>
-                        </div>
-                      </div>
-                    </div>
-                    <button className="btn banner-btn banner-info-btn mob-banner-info" type="button"
-                      data-target="#restourantInfoModal" data-toggle="modal">
-                      <img src="img/info-circle.svg" alt="" />
-                    </button>
-                  </div>
-                </div>
-              </div>
+              <RestorantPageBanner />
               <div className="mob-category-nav position-sticky">
                 <ul className="mob-category-list list-unstyled d-flex align-items-center">
                   <li className="category-link"><a className="active" href="#rolls">Ролы</a></li>
@@ -125,7 +79,7 @@ export default function RestourantsPage() {
               </div>
               <div className="restourant-menu-section" id="sushi">
                 <h2 className="restourant-menu-header">Суши</h2>
-                <SushiProducts  />
+                <SushiProducts />
               </div>
               <div className="restourant-menu-section" id="sets">
                 <h2 className="restourant-menu-header">Сеты</h2>

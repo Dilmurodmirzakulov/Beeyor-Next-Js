@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Checkout() {
   return (
     <>
@@ -13,11 +15,11 @@ export default function Checkout() {
           <div className="row section-after-nav Somethingrow-eq-height">
             <div className="es-checkout-status-header w-100 row container pr-0">
               <div className="col-lg-8 d-flex align-items-center justify-content-between">
-                <h2 className="es-section-header m-0">Статус заказа</h2>
-                <a href="#" className="aside-back-button d-flex align-items-center">
+                <h2 className="es-section-header m-0">Оформление заказа</h2>
+                <Link href="/RestourantsPage" className="aside-back-button d-flex align-items-center">
                   <img src="img/arrow-left.svg" alt="" />&nbsp;
                   <span className="es-font-medium">Назад</span>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-8">

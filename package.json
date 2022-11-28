@@ -21,13 +21,16 @@
     "react-bootstrap": "^2.6.0",
     "react-dom": "18.2.0",
     "react-redux": "^8.0.5",
+    "react-scrollspy": "^3.4.3",
     "react-slick": "^0.29.0",
     "redux": "^4.2.0",
     "redux-devtools-extension": "^2.13.9",
+    "redux-persist": "^6.0.0",
     "redux-thunk": "^2.4.2",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.6",
-    "sweetalert2": "^11.6.14",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.4.8",
     "sweetalert2-react-content": "^5.0.7"
   }
 }

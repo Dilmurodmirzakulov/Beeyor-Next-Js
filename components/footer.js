@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function footer() {
@@ -41,12 +42,12 @@ export default function footer() {
             <div className="es-footer-part">
               <h4 className="es-sub-header text-right">Часто смотрят</h4>
               <ul className="footer-list list-unstyled text-right">
-                <li className="footer-list-item"><a href="about.html">О нас</a></li>
-                <li className="footer-list-item"><a href="info-restorans.html">Рестораны</a></li>
-                <li className="footer-list-item"><a href="privacy-policy.html">Политика конфиденциальности</a></li>
-                <li className="footer-list-item"><a href="terms-of-use.html">Правила пользования</a></li>
-                <li className="footer-list-item"><a href="carrier.html">Стать курьером</a></li>
-                <li className="footer-list-item"><a href="coworking.html">Стать партнером</a></li>
+                <li className="footer-list-item"><Link href="/About">О нас</Link></li>
+                <li className="footer-list-item"><Link href="/RestourantInfo">Рестораны</Link></li>
+                <li className="footer-list-item"><Link href="/PrivacyPolicy">Политика конфиденциальности</Link></li>
+                <li className="footer-list-item"><Link href="/TermsOfUse">Правила пользования</Link></li>
+                <li className="footer-list-item"><Link href="/Carriers">Стать курьером</Link></li>
+                <li className="footer-list-item"><Link href="/Coworking">Стать партнером</Link></li>
               </ul>
             </div>
           </div>

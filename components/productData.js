@@ -9,7 +9,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Лагман Хаус",
   },
   {
     key: 1,
@@ -21,7 +21,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Лагман Хаус",
   },
   {
     key: 2,
@@ -33,7 +33,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Лагман Хаус",
   },
   {
     key: 3,
@@ -45,7 +45,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Лагман Хаус",
   },
   {
     key: 4,
@@ -57,7 +57,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Лагман Хаус",
   },
   {
     key: 5,
@@ -69,7 +69,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Лагман Хаус",
   },
   {
     key: 6,
@@ -81,7 +81,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Лагман Хаус",
   },
   {
     key: 7,
@@ -93,7 +93,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Лагман Хаус",
   },
   {
     key: 8,
@@ -105,7 +105,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Лагман Хаус",
   },
   {
     key: 9,
@@ -117,7 +117,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Лагман Хаус",
   },
   {
     key: 10,
@@ -129,7 +129,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 11,
@@ -141,7 +141,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 12,
@@ -153,7 +153,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 13,
@@ -165,7 +165,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 14,
@@ -177,7 +177,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 15,
@@ -189,7 +189,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 16,
@@ -201,7 +201,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 17,
@@ -213,7 +213,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 18,
@@ -225,7 +225,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 19,
@@ -237,7 +237,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 20,
@@ -249,7 +249,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 21,
@@ -261,7 +261,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 22,
@@ -273,7 +273,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 23,
@@ -285,7 +285,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 24,
@@ -297,7 +297,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 25,
@@ -309,7 +309,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 26,
@@ -321,7 +321,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 27,
@@ -333,7 +333,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 28,
@@ -345,7 +345,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 29,
@@ -357,7 +357,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 30,
@@ -369,7 +369,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 31,
@@ -381,7 +381,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 32,
@@ -393,7 +393,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 33,
@@ -405,7 +405,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 34,
@@ -417,7 +417,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 35,
@@ -429,7 +429,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 36,
@@ -441,7 +441,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 37,
@@ -453,7 +453,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 38,
@@ -465,7 +465,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 39,
@@ -477,7 +477,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 40,
@@ -489,7 +489,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 41,
@@ -501,7 +501,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 42,
@@ -513,7 +513,7 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
   {
     key: 43,
@@ -525,6 +525,6 @@ export const productData = [
     rate: 4.5,
     numberOfRates: 129,
     price: 15000,
-    numberOfItems: 0,
+    restorant: "Якитория",
   },
 ]

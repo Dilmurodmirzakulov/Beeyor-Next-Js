@@ -4,13 +4,9 @@ import { favouriteActions } from "../store/favouriteSlice";
 import { productData } from "./productData"
 
 export default function RollProducts() {
-  const heartImg = useSelector(state => state.favourite.heartImg)
-  console.log("heartImg", heartImg)
   const favouritesList = useSelector(state => state.favourite.favouritesList)
-  console.log(favouritesList)
-
   const products = productData.map(product => {
-  
+    
     const itemsList = useSelector(state => state.cart.itemsList)
     const productIndex = itemsList.findIndex(item => item.id === product.id)
 
@@ -36,16 +32,16 @@ export default function RollProducts() {
               </div>
               {itemsList.find(item => item.id === product.id) ?
                 <div className="product-qty-btns d-flex align-items-center">
-                  <button className="btn" onClick={(e) => {
-                dispatch(cartActions.removeFromCart({ id: product.id, quantity: 1 }))
-              }}>-</button>
+                  <button className="btn" onClick={() => {
+                    dispatch(cartActions.removeFromCart({ id: product.id, quantity: 1 }))
+                  }}>-</button>
                   <span>{itemsList[productIndex].quantity}</span>
-                  <button className="btn" onClick={(e) => {
+                  <button className="btn" onClick={() => {
                     dispatch(cartActions.addToCart({ id: product.id, quantity: 1 }))
                   }}>+</button>
                 </div>
                 :
-                <button onClick={(e) => {
+                <button onClick={() => {
                   dispatch(cartActions.addToCart({ id: product.id, quantity: 1 }))
                 }} className="favourite-product-qty btn w-100 es-add-to-cart d-flex align-items-center justify-content-center">
                   Добавить
