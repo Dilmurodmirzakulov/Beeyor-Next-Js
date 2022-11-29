@@ -8,8 +8,17 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    price: 15,
     restorant: "Лагман Хаус",
+    restorantMenuCategory: "Ролы",
+    rate: 4.5,
+    numberOfRates: 129,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    additions: {
+      additionsNames: ["Палочки 1шт", "Васаби", "Васаби", "Соевый соус", "Имбирь", "Имбирь"],
+      additionsPrices: [0.00, 5.00, 5.00, 7.00, 5.00, 5.00]
+    },
+    fullDesc: "Безусловно, понимание сути ресурсосберегающих технологий создаёт предпосылки для своевременного выполнения сверхзадачи. Равным образом, базовый вектор развития говорит о возможностях дальнейших направлений развития.",
   },
   {
     key: 1,
@@ -20,7 +29,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Лагман Хаус",
   },
   {
@@ -32,7 +42,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Лагман Хаус",
   },
   {
@@ -44,7 +55,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Лагман Хаус",
   },
   {
@@ -56,7 +68,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Лагман Хаус",
   },
   {
@@ -68,7 +81,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Лагман Хаус",
   },
   {
@@ -80,7 +94,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Лагман Хаус",
   },
   {
@@ -92,7 +107,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Лагман Хаус",
   },
   {
@@ -104,7 +120,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Лагман Хаус",
   },
   {
@@ -116,7 +133,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Лагман Хаус",
   },
   {
@@ -128,7 +146,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -140,7 +159,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -152,7 +172,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -164,7 +185,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -176,7 +198,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -188,7 +211,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -200,7 +224,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -212,7 +237,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -224,7 +250,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -236,7 +263,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -248,7 +276,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -260,7 +289,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -272,7 +302,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -284,7 +315,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -296,7 +328,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -308,7 +341,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -320,7 +354,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -332,7 +367,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -344,7 +380,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -356,7 +393,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -368,7 +406,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -380,7 +419,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -392,7 +432,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -404,7 +445,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -416,7 +458,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -428,7 +471,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -440,7 +484,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -452,7 +497,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -464,7 +510,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -476,7 +523,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -488,7 +536,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -500,7 +549,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -512,7 +562,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
   {
@@ -524,7 +575,8 @@ export const productData = [
     discount: 20,
     rate: 4.5,
     numberOfRates: 129,
-    price: 15000,
+    productDesc: "Дайкон, Капуста белокочанная, Морковь, Огурцы, Зелень.",
+    price: 15,
     restorant: "Якитория",
   },
 ]

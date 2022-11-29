@@ -13,7 +13,7 @@ export default function CartProduct() {
         </div>
         <div className="aside-product-info">
           <h4 className="es-font-14 es-font-medium">{productData[item.id].title}</h4>
-          <p className="mb-0 es-font-medium">{productData[item.id].price}</p>
+          <p className="mb-0 es-font-medium">{productData[item.id].price} сом</p>
         </div>
         <div className="aside-qty-btns d-flex align-items-center">
           <button className="btn" onClick={() => {dispatch(cartActions.removeFromCart(item))}}>-</button>

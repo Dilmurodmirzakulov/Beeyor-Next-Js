@@ -1,0 +1,32 @@
+export const restorantsData = [
+  {
+    name: "Якитория",
+    logo: "img/logo.svg",
+    shortDesc: "Японская кухня",
+    fullDesc: "Сеть культовых ресторанов авторской японской кухни…",
+    address: "Н.Махсум 77/5 А",
+    minDeliveryPrice: 5,
+    minOrderPrice: 30,
+    workingSchadule: "с 8:00 до 22:00",
+    rate: 4.5,
+    numberOfRates: 129,
+    deliveryTime: "50-60 мин",
+    menuCategories: ["Ролы", "Суши", "Сеты", "Сашими", "Десерты", "Напитки"],
+    bannerImage: "img/restorant-banner.svg",
+  },
+  {
+    name: "Плов Бародарон",
+    logo: "img/plov-borodaron-logo.svg",
+    shortDesc: "Национальная кухня",
+    fullDesc: "Сеть культовых ресторанов авторской японской кухни…",
+    address: "Н.Махсум 77/5 А",
+    minDeliveryPrice: 5,
+    minOrderPrice: 30,
+    workingSchadule: "с 8:00 до 22:00",
+    rate: 4.5,
+    numberOfRates: 129,
+    deliveryTime: "50-60 мин",
+    menuCategories: ["Ролы", "Суши", "Сеты", "Сашими", "Десерты", "Напитки"],
+    bannerImage: "img/restorant-banner.svg",
+  }
+]

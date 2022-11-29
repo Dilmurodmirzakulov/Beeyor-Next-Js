@@ -1,7 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
-// import Swal from 'sweetalert2'
-// import withReactContent from 'sweetalert2-react-content'
 import { HYDRATE } from 'next-redux-wrapper';
+import { productData } from "../components/productData";
+// ES6 Modules or TypeScript
+import Swal from 'sweetalert2'
+import { useSelector } from "react-redux";
+
+// CommonJS
+const MySwal = require('sweetalert2')
+// const MySwal = withReactContent(Swal)
 
 const cartSlice = createSlice({
   name: 'cart',
@@ -11,11 +17,19 @@ const cartSlice = createSlice({
   reducers: {
     addToCart(state, action) {
       const newItem = action.payload;
-      const existingItem = state.itemsList.find(item => item.id === newItem.id);
+      const existingItem = state.itemsList.find(item => item.id === newItem.id)
       if (existingItem) {
         existingItem.quantity++;
-      } else {
+      }
+      else {
         state.itemsList.push(newItem);
+        MySwal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Your work has been saved',
+          showConfirmButton: false,
+          timer: 1500
+        })
       }
     },
     removeFromCart(state, action) {
@@ -27,8 +41,13 @@ const cartSlice = createSlice({
         existingItem.quantity--;
       }
     },
+    removeItem(state, action) {
+      const newItem = action.payload;
+      state.itemsList = state.itemsList.filter(item => item.id !== newItem.id)
+    },
     clearCart(state) {
       state.itemsList = []
+      console.log("cleared");
     },
     increment(state, action) {
       const increaseItem = action.payload;

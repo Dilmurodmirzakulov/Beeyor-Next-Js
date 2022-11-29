@@ -32,7 +32,7 @@ export default function FavouriteProducts() {
               </div>
               <div className="favourite-product-price">
                 {/* 15.00 сом */}
-                {productData[x].price}
+                {productData[x].price} сом
               </div>
               {/* <div className="favourite-product-qty d-flex align-items-center justify-content-center">
                 <button className="es-plus btn">+</button>
@@ -85,7 +85,7 @@ export default function FavouriteProducts() {
               </div>
               <div className="favourite-product-price">
                 {/* 15.00 сом */}
-                {productData[x].price}
+                {productData[x].price} сом
               </div>
               {/* <div className="favourite-product-qty d-flex align-items-center justify-content-center">
                 <button className="es-plus btn">+</button>

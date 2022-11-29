@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { cartActions } from "../store/cartSlice";
 import CartProduct from "./CartProduct";
@@ -35,7 +35,7 @@ export default function CartList() {
             }
           </div>
         </div>
-        {sum >= 100000 ? <CartSaleProduct /> : ''}
+        {sum >= 100 ? <CartSaleProduct /> : ''}
         {
           cartList.length > 0
             ?

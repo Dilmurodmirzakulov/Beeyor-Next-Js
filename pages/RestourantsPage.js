@@ -13,10 +13,10 @@ import Scrollspy from 'react-scrollspy'
 import Link from "next/link";
 
 export default function RestourantsPage() { 
-  const favouritesList = useSelector(state => state.favourite.favouritesList)
-  console.log("favouritesList", favouritesList)
-  const cartList = useSelector(state => state.cart.itemsList)
-  console.log("cartList", cartList)
+  // const favouritesList = useSelector(state => state.favourite.favouritesList)
+  // console.log("favouritesList", favouritesList)
+  // const cartList = useSelector(state => state.cart.itemsList)
+  // console.log("cartList", cartList)
 
   return (
     <>

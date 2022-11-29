@@ -37,12 +37,12 @@ export default function RollProducts() {
                   }}>-</button>
                   <span>{itemsList[productIndex].quantity}</span>
                   <button className="btn" onClick={() => {
-                    dispatch(cartActions.addToCart({ id: product.id, quantity: 1 }))
+                    dispatch(cartActions.addToCart({ id: product.id, quantity: 1, restorant: product.restorant }))
                   }}>+</button>
                 </div>
                 :
                 <button onClick={() => {
-                  dispatch(cartActions.addToCart({ id: product.id, quantity: 1 }))
+                  dispatch(cartActions.addToCart({ id: product.id, quantity: 1, restorant: product.restorant }))
                 }} className="favourite-product-qty btn w-100 es-add-to-cart d-flex align-items-center justify-content-center">
                   Добавить
                 </button>}
