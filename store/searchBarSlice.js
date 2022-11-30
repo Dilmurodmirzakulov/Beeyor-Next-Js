@@ -4,11 +4,22 @@ import { HYDRATE } from "next-redux-wrapper";
 const searchBarSlice = createSlice({
   name: 'searchBar',
   initialState: {
-    message: ''
-  },
+    searchedText: '',
+    restorantsSearchResult: [],
+    resultsStatus: true,
+},
   reducers: {
+    nothing(state){
+      state.resultsStatus = false
+    },
+    showResult(state){
+      state.resultsStatus = true
+    },
+    setRestorantsResult(state, action){
+      state.restorantsSearchResult = action.payload
+    },
     showResults(state, action){
-      state.message = action.payload
+      state.searchedText = action.payload.toLowerCase()
     },
     extraReducers: {
       [HYDRATE]: (state, action) => {

@@ -1,5 +1,4 @@
 import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
 
 export default function RestorantPageBanner() {
   return (
@@ -23,7 +22,7 @@ export default function RestorantPageBanner() {
               4,5 (129 отзывов)
             </button>
           </div>
-          <Dropdown className="dropdown banner-info-btn-wrapper">
+          <Dropdown key="banner-dropdown" className="dropdown banner-info-btn-wrapper">
             <Dropdown.Toggle className="btn banner-btn banner-info-btn data-toggle">
               <img src="img/info-circle.svg" alt="" />
             </Dropdown.Toggle>

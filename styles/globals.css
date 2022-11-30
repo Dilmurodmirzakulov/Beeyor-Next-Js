@@ -1532,7 +1532,8 @@
     align-items: center;
     height: 40px;
   }
-  .chackout-product-qty span{
+
+  .chackout-product-qty span {
     width: 1.5rem;
     display: flex;
     align-items: center;
@@ -2074,15 +2075,20 @@
     border-radius: 1.25rem;
   }
 
-  .saerch-result{
-    height: 460px;
+  .saerch-result {
+    height: max-content;
+    max-height: 460px;
     overflow: auto;
     width: 90%;
     border-radius: 10px;
     background-color: #fff;
   }
 
-  .restorants-result-header{
+  .nothing-found {
+    height: 460px;
+  }
+
+  .restorants-result-header {
     background-color: #F5F5F7;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -2095,11 +2101,11 @@
     margin-bottom: 0;
   }
 
-  .restorants-result{
+  .restorants-result {
     width: 100%;
   }
 
-  .restorant-result{
+  .restorant-result {
     height: 104px;
     border-bottom: 1px solid #EDEDED;
     margin: 0 20px;
@@ -2107,28 +2113,28 @@
     padding: 0;
   }
 
-  .search-restorant-logo{
+  .search-restorant-logo {
     width: 74px;
     height: 74px;
     /* margin: auto 1.25rem; */
     margin-right: 20px;
   }
 
-  .es-restorant-name{
+  .es-restorant-name {
     font-weight: 500;
     font-size: 14px;
   }
 
-  .products-result-header{
+  .products-result-header {
     border-radius: 0;
   }
 
-  .search-bar-wrapper{
+  .search-bar-wrapper {
     z-index: 11;
     position: absolute;
   }
 
-  .overlay{
+  .overlay {
     background-color: #000;
     opacity: .6;
     position: absolute;
@@ -2137,6 +2143,17 @@
     top: 0;
     width: 100vw;
     height: 100vh;
+  }
+
+  .search-product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.25rem;
+  }
+
+  .main-input-field[type=search]::-webkit-search-cancel-button {
+    -webkit-appearance: searchfield-cancel-button;
   }
 
   @keyframes animatebottom {
