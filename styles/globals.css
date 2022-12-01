@@ -218,23 +218,41 @@
   .es-slider-logo-container {
     width: 25%;
     height: 12.5rem;
-    background-position: center;
-    background-size: 50%;
-    background-repeat: no-repeat;
     background-color: #fff;
     border-radius: 1.875rem 0 0 1.875rem;
-    background-image: url(/img/other-logo.svg);
+  }
+
+  .es-slider-logo-container img{
+    height: 70px;
+    width: auto;
   }
 
   .es-second-slider-img {
     width: 75%;
     height: 12.5rem;
-    background-position: center;
-    background-image: url(/img/slider.svg);
-    background-position: center;
     border-radius: 0 1.875rem 1.875rem 0;
-    background-size: cover;
-    background-repeat: no-repeat;
+  }
+
+  .es-second-slider-img img{
+    object-fit: cover;
+    border-radius: 0 1.875rem 1.875rem 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .restorant-slider-desc{
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    color: #fff;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    max-width: 364px;
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
   }
 
   /* ============================= Category Filter Nav ============================= */
@@ -403,7 +421,7 @@
 
   .es-product-wrapper {
     background-color: #FFF;
-    border-radius: 30px;
+    border-radius: 20px;
   }
 
   .es-product-info {
@@ -421,13 +439,13 @@
   }
 
   .es-ellips-block {
-    width: 8.875rem;
-    height: 3.125rem;
+    width: 7.875rem;
+    height: 2.875rem;
     position: relative;
   }
 
   .es-ellips-block-gray {
-    border-radius: 0 1.875rem 0 1.875rem;
+    border-radius: 0 1.25rem 0 1.25rem;
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
     display: flex;
@@ -436,9 +454,9 @@
   }
 
   .es-ellips-block-gray::before {
-    /* content: url(../img/ellips-product.svg); */
+    content: url(/img/ellips-product.svg);
     position: absolute;
-    bottom: 43px;
+    bottom: 39.5px;
     left: 0%;
   }
 
@@ -988,7 +1006,7 @@
     width: 100%;
     border-radius: 1.875rem;
     height: 360px;
-    background-image: url(/img/restorant-banner.svg);
+    background-image: url(/img/restorant-banner.svg); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1445,6 +1463,25 @@
     outline: none;
     border: 0;
     padding-left: 3rem;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .address-large-input .css-1s2u09g-control{
+    border-radius: .625rem;
+    height: 3.125rem;
+    background-color: var(--main-bg);
+    outline: none;
+    border: 0;
+  }
+
+  .address-large-input .css-1pahdxg-control{
+    border-radius: .625rem;
+    height: 3.125rem;
+    background-color: var(--main-bg);
+    outline: none;
+    border: 0;
+    box-shadow: none;
   }
 
   .es-location-ic {
@@ -2152,10 +2189,25 @@
     border-radius: 1.25rem;
   }
 
-  .main-input-field[type=search]::-webkit-search-cancel-button {
-    -webkit-appearance: searchfield-cancel-button;
+  .sale-delivery{
+    width: max-content;
+    background-color: #FFCA00 !important;
+    padding: auto 1.25rem !important;
+    color: #000;
   }
 
+  .sale-gift{
+    width: max-content;
+    background-color: #5FB709 !important;
+    padding: auto 1.25rem !important;
+  }
+
+  .es-sale-product-slider-photo img{
+    width: 350px;
+    height: 205px;
+    object-fit: cover;
+    border-radius: 1.25rem;
+  }
   @keyframes animatebottom {
     from {
       bottom: -300px;

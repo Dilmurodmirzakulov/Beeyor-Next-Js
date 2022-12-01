@@ -15,7 +15,7 @@ export default function SearchBar() {
   };
 
   const debouncedResults = useMemo(() => {
-    return debouce(handleChange, 800)
+    return debouce(handleChange, 700)
   }, []);
 
   useEffect(() => {
@@ -29,8 +29,8 @@ export default function SearchBar() {
       <div className="search-bar-wrapper position-relative">
         <form className="es-search-container">
           <img src="img/ic-search.svg" alt="" />
-          <input className="main-input-field" type="search" placeholder="Поиск ресторанов и блюд" onFocus={() => setRemove("block")} onChange={debouncedResults} />
-          <button className="es-search-btn">Найти</button>
+          <input className="main-input-field" type="text" placeholder="Поиск ресторанов и блюд" onFocus={() => setRemove("block")} onChange={debouncedResults} />
+          <button className="es-search-btn" type="submit">Найти</button>
         </form>
         {searchedText.length >= 3 ? <SearchResults key="search-results" remove={remove} /> : ''}
 

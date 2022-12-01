@@ -1,4 +1,3 @@
-// import {RollProducts, SushiProducts, SetProducts, SashimiProducts, DessertProducts, BeverageProducts} from "../components";
 import RollProducts from "../components/RollProducts";
 import SushiProducts from "../components/SushiProducts";
 import SetProducts from "../components/SetProducts";
@@ -8,9 +7,8 @@ import BeverageProducts from "../components/BeverageProducts";
 import React from "react";
 import Cart from "../components/CartList";
 import RestorantPageBanner from "../components/RestorantPageBanner";
-import { useSelector } from "react-redux";
-import Scrollspy from 'react-scrollspy'
 import Link from "next/link";
+import CompanyMenu from "../components/CompanyMenu";
 
 export default function RestourantsPage() { 
   // const favouritesList = useSelector(state => state.favourite.favouritesList)
@@ -29,29 +27,7 @@ export default function RestourantsPage() {
                   <img src="img/arrow-left.svg" alt="" />&nbsp;
                   <span className="es-font-medium">Назад</span>
                 </Link>
-                <div className="aside-nav">
-                  <h4 className="m-0 es-font-medium es-font-size-20 es-pt-50">Меню ресторана</h4>
-                  <Scrollspy items={['rolls', 'sushi', 'sets', 'sashimi', 'desserts', 'beverages']} currentClassName="active" className="aside-nav-list list-unstyled">
-                    <li>
-                      <a className="aside-nav-item" href="#rolls">Ролы</a>
-                    </li>
-                    <li>
-                      <a className="aside-nav-item" href="#sushi">Суши</a>
-                    </li>
-                    <li>
-                      <a className="aside-nav-item" href="#sets">Сеты</a>
-                    </li>
-                    <li>
-                      <a className="aside-nav-item" href="#sashimi">Сашими</a>
-                    </li>
-                    <li>
-                      <a className="aside-nav-item" href="#desserts">Десерты</a>
-                    </li>
-                    <li>
-                      <a className="aside-nav-item" href="#bevereges">Напитки</a>
-                    </li>
-                  </Scrollspy>
-                </div>
+                <CompanyMenu />
               </div>
             </div>
             <div className="col-lg-7 restorant-page-middle-part">
@@ -99,7 +75,7 @@ export default function RestourantsPage() {
               </div>
             </div>
             <div className="col-3 aside-container">
-              <Cart />
+              <Cart  />
             </div>
           </div>
         </div>

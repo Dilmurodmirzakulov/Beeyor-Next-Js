@@ -68,21 +68,21 @@ export default function Checkout() {
                   <div className="radio-inputs mr-5">
                     <div className="input-container mb-3">
                       <input className="input-radio" type="radio" name="payment" id="cash" />
-                      <label for="cash">Наличные</label>
+                      <label htmlFor="cash">Наличные</label>
                     </div>
                     <div className="input-container">
                       <input className="input-radio" type="radio" name="payment" id="korti-milli" />
-                      <label for="korti-milli">Корти Милли</label>
+                      <label htmlFor="korti-milli">Корти Милли</label>
                     </div>
                   </div>
                   <div className="radio-inputs">
                     <div className="input-container mb-3">
                       <input className="input-radio" type="radio" name="payment" id="visa" />
-                      <label for="visa">Visa</label>
+                      <label htmlFor="visa">Visa</label>
                     </div>
                     <div className="input-container">
                       <input className="input-radio" type="radio" name="payment" id="master-card" />
-                      <label for="master-card">MasterCard</label>
+                      <label htmlFor="master-card">MasterCard</label>
                     </div>
                   </div>
                 </div>
